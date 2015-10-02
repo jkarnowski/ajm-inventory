@@ -1,7 +1,7 @@
 <h1>List a new Aircraft For Sale</h1>
 
 <section>
-	<%= form_for :aircraft do |f| %>
+	<%= form_for @aircraft do |f| %>
 		<p>Aircraft Model:</p><%= f.text_field :model_type %><br>
 		<p>Year:</p><%= f.text_field :year %><br>
 		<p>Total Time:</p><%= f.text_field :total_time %><br>

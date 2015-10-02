@@ -1,14 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'aircraft/index'
-
-  get 'aircraft/new'
-
-  get 'aircraft/show'
-
-  get 'aircraft/edit'
-
-  resources :aircraft
+  resources :aircrafts
 
   get 'admin' => 'admin#index'
 
@@ -16,7 +8,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'aircraft#index'
+  root 'aircrafts#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
