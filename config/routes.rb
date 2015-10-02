@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 
+  get 'aircraft/index'
+
+  get 'aircraft/new'
+
+  get 'aircraft/show'
+
+  get 'aircraft/edit'
+
   resources :aircraft
 
   get 'admin' => 'admin#index'
