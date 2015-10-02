@@ -1,2 +1,12 @@
-<h1>Aircraft#new</h1>
-<p>Find me in app/views/aircraft/new.html.erb</p>
+<h1>List a new Aircraft For Sale</h1>
+
+<section>
+	<%= form_for :aircraft do |f| %>
+		<p>Aircraft Model:</p><%= f.text_field :model_type %><br>
+		<p>Year:</p><%= f.text_field :year %><br>
+		<p>Total Time:</p><%= f.text_field :total_time %><br>
+		<p>Price:</p><%= f.text_field :price %><br>
+		<p>Location:</p><%= f.text_field :location %></br>
+		<p><%= f.submit "List" %></p>
+	<% end %>
+</section>

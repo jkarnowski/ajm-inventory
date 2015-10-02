@@ -1,2 +1,10 @@
-<h1>Aircraft#index</h1>
-<p>Find me in app/views/aircraft/index.html.erb</p>
+<h1>All Aircraft</h1>
+
+<h4>Search:</h4>
+
+<% @aircrafts.each do |plane| %>
+	<%= plane.model_type  %><br>
+<%end  %>
+
+<!-- should be link_to_if once I setup the admin account -->
+<br><%= link_to 'New Aircraft', new_aircraft_path %>
